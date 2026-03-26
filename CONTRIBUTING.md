@@ -29,8 +29,8 @@ See the [Architecture document](docs/ARCHITECTURE.md) for the solution structure
 
 ```powershell
 # Clone
-git clone https://github.com/relexx/tb-tab-bridge.git
-cd tb-tab-bridge
+git clone https://github.com/relexx/ff-tab-bridge.git
+cd ff-tab-bridge
 
 # Build
 dotnet build src/TabBridge.sln

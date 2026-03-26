@@ -4,7 +4,7 @@
 
 Tab Bridge is a WebExtension + Native Messaging Host that enables transferring browser tabs between profiles in Gecko-based browsers (Firefox, Waterfox, LibreWolf, etc.). It fills the gap of a missing "Move tab to profile" feature.
 
-**Repository:** https://github.com/relexx/tb-tab-bridge  
+**Repository:** https://github.com/relexx/ff-tab-bridge  
 **Author:** relexx (relexx.de)  
 **License:** MPL 2.0
 

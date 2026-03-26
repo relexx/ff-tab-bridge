@@ -16,11 +16,11 @@ This guide walks you through setting up your local development environment for T
 
 ```powershell
 # Create repo on GitHub with MPL 2.0 license
-gh repo create relexx/tb-tab-bridge --public --license mpl-2.0 --description "Transfer browser tabs between profiles in Gecko-based browsers"
+gh repo create relexx/ff-tab-bridge --public --license mpl-2.0 --description "Transfer browser tabs between profiles in Gecko-based browsers"
 
 # Clone locally
-git clone https://github.com/relexx/tb-tab-bridge.git
-cd tb-tab-bridge
+git clone https://github.com/relexx/ff-tab-bridge.git
+cd ff-tab-bridge
 ```
 
 ## Step 2: Copy the prepared files
@@ -28,7 +28,7 @@ cd tb-tab-bridge
 Copy all files from the prepared repo structure into your cloned repository:
 
 ```
-tb-tab-bridge/
+ff-tab-bridge/
 ├── README.md
 ├── CONTRIBUTING.md
 ├── .github/
@@ -77,7 +77,7 @@ The `.claude/CLAUDE.md` file is already created. Claude Code reads this automati
 ### 3.3 Start Claude Code in the project
 
 ```powershell
-cd C:\path\to\tb-tab-bridge
+cd C:\path\to\ff-tab-bridge
 
 # Start Claude Code in interactive mode
 claude
@@ -239,7 +239,7 @@ Before starting development, verify everything works:
 
 ```powershell
 # 1. Claude Code reads the project instructions
-cd C:\path\to\tb-tab-bridge
+cd C:\path\to\ff-tab-bridge
 claude "What is this project about? What are the security rules I must follow?"
 # → Should summarize Tab Bridge and list the 10 security rules from CLAUDE.md
 
@@ -256,7 +256,7 @@ dir "%APPDATA%\Waterfox\Profile Groups\"
 
 # 5. Git and GitHub are configured
 git remote -v
-# → Should show github.com/relexx/tb-tab-bridge
+# → Should show github.com/relexx/ff-tab-bridge
 ```
 
 ## Automation ideas for later
