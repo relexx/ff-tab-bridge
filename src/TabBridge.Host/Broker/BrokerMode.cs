@@ -163,9 +163,5 @@ public static class BrokerMode
         await targetWriter.WriteAsync(message, cancellationToken);
     }
 
-    private static byte[] LoadSecret()
-    {
-        // TODO: load from %LOCALAPPDATA%\tab-bridge\secret.key
-        throw new NotImplementedException("Secret loading not yet implemented.");
-    }
+    private static byte[] LoadSecret() => SecretLoader.Load();
 }
