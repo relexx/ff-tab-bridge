@@ -1,0 +1,36 @@
+# .NET
+bin/
+obj/
+publish/
+*.user
+*.suo
+*.sln.docstates
+.vs/
+
+# NuGet
+*.nupkg
+**/packages/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Tab Bridge runtime files (never commit secrets or logs)
+secret.key
+broker.log
+*.log
+
+# Extension build artifacts
+src/extension/web-ext-artifacts/
