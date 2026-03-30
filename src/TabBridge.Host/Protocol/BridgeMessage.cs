@@ -11,10 +11,14 @@ public record BridgeMessage(
     [property: JsonPropertyName("source_profile")] string SourceProfile,
     [property: JsonPropertyName("target_profile")] string TargetProfile,
     [property: JsonPropertyName("payload")]        TabPayload? Payload,
-    [property: JsonPropertyName("hmac")]           string Hmac);
+    [property: JsonPropertyName("hmac")]           string Hmac,
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    [property: JsonPropertyName("profiles")]       ProfileListPayload? Profiles = null);
 
 /// <summary>Source-generation context for trim-compatible serialization.</summary>
 [JsonSerializable(typeof(BridgeMessage))]
 [JsonSerializable(typeof(TabPayload))]
+[JsonSerializable(typeof(ProfileListPayload))]
+[JsonSerializable(typeof(ProfileEntry))]
 [JsonSourceGenerationOptions(PropertyNamingPolicy = JsonKnownNamingPolicy.SnakeCaseLower)]
 public partial class BridgeMessageContext : JsonSerializerContext { }
